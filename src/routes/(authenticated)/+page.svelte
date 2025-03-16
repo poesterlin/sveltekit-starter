@@ -4,4 +4,4 @@
 	let { data }: { data: PageServerData } = $props();
 </script>
 
-<h1>Hello {data.user}</h1>
+<h1>Hello {data.user.username}</h1>

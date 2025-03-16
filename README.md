@@ -4,6 +4,7 @@ My personal Sveltekit Setup.
 
 Includes:
 
+- Drizzle ORM
 - Tailwind CSS
 - Auth + Redirects
 - Basic Routes
