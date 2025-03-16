@@ -17,6 +17,12 @@ Includes:
 
 ## Setup
 
+Init a new project with the following command:
+
+```powershell
+iwr 'https://raw.githubusercontent.com/poesterlin/sveltekit-starter/main/init-from-template.ps1' | iex
+```
+
 Copy the `.env.example` file to a `.env` file and update the values.
 
 ## Usage
