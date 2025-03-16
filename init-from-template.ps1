@@ -56,9 +56,6 @@ try {
     git add .
     git commit -m "Initial setup from template"
 
-    # Remove template-specific files
-    git rm --cached init-from-template.ps1
-
     Write-Host "Template setup complete! New repository initialized."
 
     # copy .env.example to .env
