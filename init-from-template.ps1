@@ -46,6 +46,13 @@ try {
     Write-Host "Initializing new git repository..."
     git init
 
+    # reset readme file
+    Remove-Item -Path README.md -Force
+    
+    # add new readme file
+    Add-Content -Path README.md -Value "# Project"
+    Add-Content -Path README.md -Value "This repository was initialized from a template. Please update this README with relevant information."
+    
     git add .
     git commit -m "Initial setup from template"
 
