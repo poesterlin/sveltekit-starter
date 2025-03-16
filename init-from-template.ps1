@@ -45,10 +45,20 @@ try {
     # Initialize new git repository
     Write-Host "Initializing new git repository..."
     git init
+
+    # remove script
+    Remove-Item -Path $MyInvocation.MyCommand.Path -Force
+
     git add .
-    git commit -m "Initial commit from template"
+    git commit -m "Initial setup from template"
     
     Write-Host "Template setup complete! New repository initialized."
+
+    # copy .env.example to .env
+    Copy-Item -Path .env.example -Destination .env -Force
+
+    # install dependencies
+    bun install
 }
 catch {
     Write-Error "An error occurred: $_"
