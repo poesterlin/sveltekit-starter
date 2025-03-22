@@ -25,6 +25,11 @@ iwr 'https://raw.githubusercontent.com/poesterlin/sveltekit-starter/main/init-fr
 
 Copy the `.env.example` file to a `.env` file and update the values.
 
+## Versions
+
+- Default: `iwr 'https://raw.githubusercontent.com/poesterlin/sveltekit-starter/main/init-from-template.ps1' | iex`
+- No Auth: `iwr 'https://raw.githubusercontent.com/poesterlin/sveltekit-starter/no-auth/init-from-template.ps1' | iex`
+
 ## Usage
 
 ```bash
