@@ -1,6 +1,6 @@
 param(
     [Parameter(Mandatory=$false)]
-    [string]$Branch = "no-auth"
+    [string]$Branch = "static"
 )
 
 # Hardcoded repository name
