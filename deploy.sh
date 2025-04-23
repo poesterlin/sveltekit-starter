@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# ignore file mode changes
+git config core.fileMode false
+
 # Get the current branch name
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
